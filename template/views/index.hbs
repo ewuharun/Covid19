@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    
+</head>
+
+<body>
+    <center>
+        {{>header}}
+    </center>
+    
+
+  
+
+<center>
+    <select id="filter_option">
+    <option value="Choose Your Filter Option">Choose Your Filter Option?</option>
+  <option value="country">Filter By Country?</option>
+  <option value="saab">Filter By Date In a Country ?</option>
+  <option value="mercedes">Total Number In World</option>
+  
+</select>
+</center>
+
+
+    <br>
+     <div id="caleandar">
+
+    </div>
+    <form>  
+            <label for="region">Enter country name !!!!</label>
+            <br>
+            <br>
+            <input placeholder="Country">
+            <button type="submit" value="submit">Search</button>
+    </form>
+
+
+    
+
+
+
+    
+<table align="center" cellpadding="10px" id="corona_message">
+    <tr>
+        China
+    </tr>
+
+      <tr>
+    <th>Year/Month/Day</th>
+    <th>City</th>
+    <th>Confirmed</th>
+    <th>Deaths</th>
+    <th>Recovered</th>
+    <th>Active</th>
+
+  </tr>
+
+  <tbody id="corona_data">
+  </tbody>
+</table>
+
+
+
+    
+
+
+
+
+
+    
+   </table>
+
+
+   
+
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
